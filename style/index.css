@@ -74,6 +74,12 @@ nav a{
 }
 .wrapper{
     display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.logo{
+    display: flex;
+    justify-self: flex-start;
 }
 .top-img{
     display: flex;
@@ -121,7 +127,7 @@ nav a{
 .box5, .box6, .box7, .box8, .box9, .box10 {
     width: 12.5%;
     height: 100px;
-    margin: 20px 2.5%;
+    margin: 2% 2.5%;
     color: white;
     display: flex;
     align-items: center;
@@ -183,7 +189,7 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
+    padding: 2% 2%;
     font-size: 13px;
 }
 
@@ -191,4 +197,20 @@ footer nav a {
     color: white;
     text-decoration: none;
 
+}
+@media(max-width:800){
+    .middle-content{
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
+@media(max-width:500){
+    .middle-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .boxes{
+        display: flex;
+        flex-direction: column;
+    }
 }
