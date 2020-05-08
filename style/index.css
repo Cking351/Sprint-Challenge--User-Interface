@@ -65,38 +65,34 @@ h1, h2, h3, h4, h5 {
 p {
     line-height: 1.4;
 }
-
-.heading-container{
+.primary{
+    height: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+.top-img{
+    display: flex;
+    align-self: center;
 }
 .logo{
     display: flex;
-    justify-content: center;
+    align-self: center;
+    padding: 3%;
 }
 .top-nav{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-content: flex-start;
+    margin-left: 27%;
+    padding-top: 1%;
 }
-.home{
-    display: flex;
-}
-.about{
-    display: flex;
-}
-.products{
-    display: flex
-}
-.blog{
-    display: flex;
-}
-.contact{
-    display: flex;
-}
+
+
 header nav a{
     text-decoration: none;
     color: black;
+    font-weight: bold;
+
 }
 
 .container {
