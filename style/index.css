@@ -74,7 +74,7 @@ nav a{
 .wrapper{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 .links{
     display: flex;
@@ -84,6 +84,7 @@ nav a{
 .logo{
     display: flex;
     justify-self: flex-start;
+
 }
 .top-img{
     display: flex;
@@ -216,7 +217,7 @@ footer nav a {
     .top-content{
         display: flex;
         flex-flow: column wrap;
-        align-items: flex-start;
+        align-items: center;
         border-bottom: none;
     }
     .text-container{
@@ -247,6 +248,10 @@ footer nav a {
     body{
         border-style: none;
     }
+    .middle-content{
+        margin-left: 20%;
+        padding-left: 10%;
+        }
     .middle-content .boxes{
         display: flex;
         flex-flow: column nowrap;
@@ -255,8 +260,12 @@ footer nav a {
     .top-content{
         display: flex;
         flex-flow: column wrap;
-        align-items: flex-start;
+        align-items: center;
+        margin-right: 30%;
         max-width: 700px;
+    }
+    .whybox{
+        margin-left: -85%;
     }
     .text-container{
        text-align: center;
@@ -267,11 +276,12 @@ footer nav a {
         flex-direction: column;
         text-align: flex-start;
         justify-content: flex-start;
+        margin-left: 20%;
     }
     footer{
         max-width: 465px;
     }
  h2{
-     text-align: start;
- }
+     text-align: center; 
+    }
 }
