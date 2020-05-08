@@ -217,6 +217,7 @@ footer nav a {
         display: flex;
         flex-flow: column wrap;
         align-items: flex-start;
+        border-bottom: none;
     }
     .text-container{
        text-align: start;
@@ -266,6 +267,9 @@ footer nav a {
         flex-direction: column;
         text-align: flex-start;
         justify-content: flex-start;
+    }
+    footer{
+        max-width: 465px;
     }
  h2{
      text-align: start;
