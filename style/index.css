@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 68.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -64,8 +64,33 @@ h1, h2, h3, h4, h5 {
 
 p {
     line-height: 1.4;
+    
 }
+nav a{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.links{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.logo{
+    display: flex;
+    justify-self: flex-start;
 
+}
+.top-img{
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+}
 .container {
     width: 800px;
     margin: 0 auto;
@@ -77,12 +102,15 @@ p {
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    padding-top: 5%;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
+    padding-top: 2%;
     padding-bottom: 20px;  
+    font-weight: 600;
 }
 
 .middle-content {
@@ -97,25 +125,57 @@ p {
 
 .middle-content .boxes {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes .box1, .box2, .box3, .box4,
+.box5, .box6, .box7, .box8, .box9, .box10 {
     width: 12.5%;
     height: 100px;
-    background: black;
-    margin: 20px 2.5%;
+    margin: 2% 2.5%;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.box1{
+    background-color: teal;
+}
+.box2{
+    background-color: gold;
+}
+.box3{
+    background-color: cadetblue;
+}
+.box4{
+    background-color: coral;
+}
+.box5{
+    background-color: crimson;
+}
+.box6{
+    background-color: forestgreen;
+}
+.box7{
+    background-color: darkorchid;
+}
+.box8{
+    background-color: hotpink;
+}
+.box9{
+    background-color: indigo;
+}
+.box10{
+    background-color: dodgerblue;
 }
 
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+    font-weight: 600;
 }
 
 .bottom-content .text-container {
@@ -136,11 +196,92 @@ footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+    padding: 2% 2%;
+    font-size: 13px;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+
+}
+@media(max-width:800px){
+    .middle-content .boxes {
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 700px;
+    }
+    .middle-content{
+        border-bottom: none;
+    }
+    .top-content{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        border-bottom: none;
+    }
+    .text-container{
+       text-align: start;
+       max-width: 180px;
+    }
+    .bottom-content {
+        display: flex;
+        margin: 0 2% 20px;
+        justify-content: flex-start;
+        align-content: flex-start;
+        font-weight: 600;
+    }
+    
+    .bottom-content .text-container {
+        padding-right: 4%;
+    }
+    
+    .bottom-content .text-container:last-child {
+        padding-right: 5%;
+        align-content: flex-end;
+    }
+    footer{
+        max-width: 600px;
+    }
+    
+@media(max-width:500px){
+    body{
+        border-style: none;
+    }
+    .middle-content{
+        margin-left: 20%;
+        padding-left: 10%;
+        }
+    .middle-content .boxes{
+        display: flex;
+        flex-flow: column nowrap;
+        max-height: unset;
+    }
+    .top-content{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        margin-right: 30%;
+        max-width: 700px;
+    }
+    .whybox{
+        margin-left: -85%;
+    }
+    .text-container{
+       text-align: center;
+       max-width: 250px;
+    }
+    .bottom-content{
+        display: flex;
+        flex-direction: column;
+        text-align: flex-start;
+        justify-content: flex-start;
+        margin-left: 20%;
+    }
+    footer{
+        max-width: 465px;
+    }
+ h2{
+     text-align: center; 
+    }
 }
